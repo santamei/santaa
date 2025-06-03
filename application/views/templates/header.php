@@ -234,6 +234,15 @@
                 </a>
               </li>
               <?php endif; ?>
+              <ul class="nav nav-treeview">
+              <?php if ($level == 'admin' || $level == 'user') :?>
+                <li class="nav-item"> 
+              <a href="<?= base_url('pasien');?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pasien</p>
+                </a>
+              </li>
+              <?php endif; ?>
               </ul>
               <li class = "nav-item">
                 <a href="<?=site_url('auth/logout') ?>" class="nav-link">
